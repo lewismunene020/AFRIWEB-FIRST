@@ -1,0 +1,581 @@
+<!-----WHEN YOU MOST WANT TO GIVE UP THE HOLY SPIRIT KEEPS TELLING YOU: " PRESS ON.....NOT TO DIVERT TO EVIL THINGS..JUST STICK TO THE LANE AND I WILL HELP YOU FULFIL YOUR GOALS IF YOU TRUST IN ME......"--->
+<!DOCTYPE html>
+<html>
+<!---POLITE REMINDER.... WHEN REFERRING TO IMAGES OR VEDIOS CREATE ...A FOLDER.....THEN REFERENCE THE FOLDER...eg...images/logo.png ....or vedios/intro.mp4....-->
+
+<!---RECONSIDER..... overflow.. property...for scroll and hidden content to enable you to view content..in hidden side and scroll SECTIONS eg in W3schools.com...
+
+*DON'T FORGET word-wrap: break-word; property......
+.
+
+
+*Include SEARCH NAR...With a search 🔍🔍 icon and the 🎙️🎙️ icon for voice input.....
+
+CREATE A DATABASE FOR CONTROLLING THE VOICE INPUT..AND ALSO ..... searching through and if content is unavailable it alerts...and notifies ME to CONSIDER including Content by sending me an  EMAIL to my official email
+THIS WILL BOOST  THE SITE EFFECTIVENESS........ .
+
+--->
+    <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-----REMEMBER TO ADD META VIEW PORT AND MAKE IT RESPONSIVE----->
+        <title>AFRI-WEB LIMITED</title>
+        <style>
+       
+       html{
+          height:fit;     
+       } 
+       *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Times New Roman'
+    
+}
+body {
+        height:100%;
+    box-shadow:0 0 20px 0 rgba(0 ,0,0,0.7);
+  
+    margin:0;
+    padding:0;
+    background:white;
+    background-clip:padding-box;
+    overflow:scroll;
+    word-wrap:break-word;
+    /*border:2px solid black;
+    border-left:4px solid black;*/
+    
+    
+    margin-right:3px;
+    margin-top:3px;
+    margin-left:3px;
+   color:#5a5a5a;
+}
+
+.content-box{
+    background-clip:padding-box; 
+    box-shadow:0 0 10px 10px rgba(0 ,0,0,0.2);
+           
+}
+/*REMEMBER TO SET THE HEADER AS FIXED*/
+
+.header{
+    background:lightgreen;
+    
+    height:17%;
+    padding-top:5%;
+    padding-bottom:5%;
+    position:sticky;
+    top:0;
+    z-index:10;
+    align-items: center;
+    
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    
+ /*BOX SHADOW MAKES SECTIONS LOOK ENTICING..AND ATTRACTIVE...*/
+ 
+    box-shadow:0 0 20px 0 rgba(0 ,0,0,0.7);
+    
+    
+}
+.flex{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+}
+#hamburger{
+    margin-left:auto;
+    margin-right:90%;
+    
+}
+#title{
+    margin-left:20%;
+    margin-right:20%
+    
+    
+    margin-right:1%;
+    width:fit;
+}A{
+    color:black;
+    text-shadow: white;
+    
+}
+.F{
+    color:white;
+    text-shadow:red;
+}
+.R{
+    color:red;
+    text-shadow:white;
+}
+.I1{
+    color:white;
+    text-shadow:green;
+}
+.W{
+    color:green;
+    text-shadow:blue;
+}
+.E1{
+    color:blue;
+    text-shadow:grey;
+}
+.B{
+    margin-left:0px;
+    color:white;
+    text-shadow:grey;
+}
+.title{
+        background:wheat;
+        
+}
+.letters{
+        padding-left:15px;
+        padding-right:5px;
+        padding-top:5px;
+        padding-bottom:5px;
+        display:flex;
+}
+
+
+.profile{
+        background-color:white;
+       width:60px;
+       height:60px;
+       
+        margin-right:0;
+        margin-left:10%;
+        
+        border-radius:50%;
+        
+}
+
+#menu{
+    display:block ;
+    height:40px;
+    width:40px;
+    margin-top:20px;
+    margin-left:1%;
+    
+}
+.bar{
+    margin-top:5px;
+    border-radius:12px;
+    background:red;
+    display:block;
+    width:50px;
+    height:6px;
+    transition:0.3s ease-in;
+}
+.bar:nth-child(1){
+    margin-top:0;
+   
+}
+
+.change #bar1{
+    transform:translateY(11px)rotate(-45deg);
+}
+.change #bar3{
+    transform:translateY(-11px)rotate(45deg);
+}
+.change #bar2{
+    opacity:0;
+}
+.nav li a{
+    text-decoration:none;
+    color:white;
+    font-weight:bolder;
+   
+    
+}
+.nav{
+   display:none;
+   transition:1s ease-in;
+   
+   
+}
+
+.nav ul li{
+    list-style-type:none;
+    margin-top:10px;
+    
+}
+.nav ul .link:hover{
+        background-color:red;
+        border-radius:20px 20px 20px 20px;
+}
+.link:nth-child(1){
+   margin-top:0; 
+}
+.home{
+    padding-top:5px;
+}
+.LinksList{
+        border-box
+}
+.menu-bg{
+        width:0;
+        height:0;
+        transition:0.3s ease-in;
+}
+.change-bg{
+   margin-left:5px;
+    background-color:grey;
+    border-left:2px solid rgba(0,0,0,0.3);
+    border-bottom:2px solid rgba(0,0,0,0.3);
+    background-clip:padding-box;
+    box-shadow:-5px 5px #888888; border-radius:0 0 0 20px; 
+    width:80%;
+     height:1000px;
+     overflow:scroll;
+     
+}
+.menu-bg,#menu-bar{
+        top:0;
+        left:0;
+        position: absolute;
+         min-height:170px;
+       max-height:1000px;
+        
+}
+#menu-bar{
+        top:20px;
+        left:5px;
+        z-index:2;
+        
+}
+
+.menu-bg{
+        z-index:1;
+        top:5px;
+}
+.change{
+        display:block;
+       
+} 
+.change nav{
+        height:1000px;
+}
+.link{
+        padding:11px 15px;
+        background-color:blue;
+        color:white;
+        margin-left:20px;
+    background-clip:padding-box;
+    box-shadow:-3px 3px rgba(255,255,255,50);
+    border:1px solid #5a5a5a;
+    border-top:
+}
+
+
+.link a:hover{
+        font-weight: bolder;
+        color:white;
+        cursor:pointer;
+        background-color:red;
+        
+}//set the visited link to a certain color,,
+//the active link to a certain color and background-color
+
+a:visited{
+        background:green;
+} 
+a:active{
+        color:white;
+        background-color:green;
+}
+//Link description above
+
+//TITTLE Definition below
+
+
+
+
+/*HEADING...DESCRIPTION.....*/
+
+#heading1{
+       padding:15px 25% 5px 25%;
+            
+}
+form{
+     
+     
+}
+ #email{
+        width:100%;
+      
+}
+#comment{
+    width:100%;
+    height:70px;    
+}
+
+        </style>
+<script>
+ function onClickMenu(){
+    document.getElementById("menu").classList.toggle("change");
+    
+document.getElementById("nav").classList.toggle("change");
+
+document.getElementById("menu-bg").classList.toggle("change-bg");
+}
+
+
+</script>        
+    </head>
+<body>
+ <header id="header"class="header">
+  <div class="flex top">
+ <!---MAKE THE HAMBURGER RESPONSIVE TO ALL SCREEN SIZES---->
+   <span class="hamburger"id="hamburger">
+       <span class="menu-bar"id="menu-bar">
+           <span class="menu "id="menu"onclick="onClickMenu()">
+              <div class="bar"id="bar1"></div>
+              <div class="bar"id="bar2"></div>
+              <div class="bar"id="bar3"></div>
+           </span>
+           
+           <div class="nav"id="nav">
+             
+   <ul class="LinksList"id="LinksList">
+      <li class="home link" >
+    <!-----HOME ICON......----->      
+      
+      <img width="30px" height="30px" class="images"src="
+https://profileicon.000webhostapp.com/Home.png"/> 
+       
+     
+      <a href="www.afriweb01.com">
+ 
+      <span>HOME</span>
+      
+      </a></li>
+<!--REMEMBER TO ADD ICONS FOR HOME,FRIENDS..etc..BEFORE THE LINK---->
+      <li class="friends link">
+      
+ <!-----FRIENDS ICON......----->      
+      
+      <img width="30px" height="30px" class="images"src="https://profileicon.000webhostapp.com/Friends.jpeg"/> 
+       
+     <a href="www.afriweb01.com">FRIENDS</a></li>
+      <li class="messages link">
+      
+<!-----MESSAGES ICON......----->      
+      
+      <img width="30px" height="30px" class="images"src="https://profileicon.000webhostapp.com/Messages2.jpeg"/> 
+       
+     <a href="www.afriweb01.com">MESSAGES</a></li>     
+     
+      <li class="notifications link">
+      
+ <!-----NOTIFICATIONS ICON......----->      
+      
+      <img width="30px" height="30px" src="https://profileicon.000webhostapp.com/Dashboard%20Icons/Notification%20Icon2.jpeg"/> 
+       
+             
+              <a href="www.afriweb01.com">    
+
+      NOTIFICATIONS</a></li>
+     
+      
+     
+      <li class="goods link">
+      
+      
+<!-----GOODS AND SERVICES.----->      
+      
+      <img width="30px" height="30px" class="images"src="https://profileicon.000webhostapp.com/Goods%20and%20Services2.png"/> 
+       
+     
+      <a href="www.afriweb01.com">GOODS&SERVICES</a></a></li>
+ <!---ADD SERVICES SUCH AS DELIVERY..,TRANSPORT,..SHOPS NEARBY...--->
+      <li class="pages link">
+<!-----PAGES ICON......----->      
+      
+      <img width="30px" height="30px" class="images"src="https://profileicon.000webhostapp.com/Pages.jpeg"/> 
+       
+     
+      <a href="www.afriweb01.com">GROUPS AND PAGES</a></li>
+            <li class="vedios link">
+      
+<!-----VEDIOS ICON......----->      
+      
+      <img width="30px" height="30px" class="images"src="https://profileicon.000webhostapp.com/Top%20Vedios.png"/> 
+       
+           
+      <a href="www.afriweb01.com">TOP VEDIOS</a></li>
+      
+      
+ <li class="games link">
+ <!-----GAMES ICON......----->      
+      
+      <img width="30px" height="30px" class="images"src="https://profileicon.000webhostapp.com/Games2.jpeg"/> 
+       
+           
+      <a href="www.afriweb01.com">GAMES</a></li>
+      <li class="events link">
+  
+<!-----EVENTS ICON......----->      
+      
+      <img width="30px" height="30px" class="images"src="https://profileicon.000webhostapp.com/Events.png"/> 
+       
+           
+      <a href="www.afriweb01.com">EVENTS</a></li>
+
+      
+    </ul>   
+  
+           
+           </div>
+       </span>
+   </div>
+   <span class="title"id="title">
+      <h1 class="letters">
+        <b class="A">A</b>
+        <b class="F">F</b>
+        <b class="R">R</b>
+        <b class="I1">I</b>
+        <b class="W">W</b>
+        <b class="E1">EB</b>
+   
+    
+      </h1>
+
+   </span>
+   <span id="profile"class="profile">
+   <!-----ADD IMAGE AND UPLOAD IT TO THE DATABASE------>
+   <img
+id="prof" src="https://profileicon.000webhostapp.com/maleIcon.png" height="60px"width="60px"style="border-radius:50%;">
+   
+   </span>
+  </div> 
+  <div class="menu-bg"id="menu-bg"></div>   
+  </header>
+
+  
+  <h1 id="heading1">AFRIWEB LIMITED</h1>
+  
+  
+  <!--YOUTUBE VEDIOS------>
+  
+  <!-----VEDIO1---->
+<section class="vedios" style="background:white;height:auto; margin-top:5px;background-clip:border-box;border-top:5px solid rgba(0,0,0,0.3);">
+
+<!-----Set the paragraph to a form that gets VEDIOS DESCRIPTION AND NAMES--
+   
+   IT SHOULD ALSO GET THE USER ICON AND display It ...if NO ICON IS PRESENT...IN THE USER ACCOUNT.....THEN DEFAULT ICON SHOULD BE USED....
+--->
+<div style="background-clip:padding-box;margin-bottom:3px;border-bottom:rgba(0,0,0,0.4);
+  box-shadow:0 3px 0 0 rgba(0,0,0,0.4);
+  
+ ">
+     <div style="display: flex;
+justify-content:space-between;">
+<p style="margin-left:0
+ 1px;border-radius:0px 0px 20px 0px; margin-top:5px;background-color: black;">
+  <span style="color:white;padding:5px;">Hold Me up Tie me down by Gryffin</span>
+  
+  
+</p>
+
+
+<!---The span below forms a user icon on the right side.....---> 
+
+
+<span style="margin-right:5px;margin-top:10px;">
+<i style="margin-left:5px;">love and relations</i>
+  <img width="30px" height="30px" class="icons"src="https://profileicon.000webhostapp.com/Body%20Icons🏋%EF%B8%8F🏋%EF%B8%8F%E2%80%8D♀%EF%B8%8F🏋%EF%B8%8F%E2%80%8D♂%EF%B8%8F🏋%EF%B8%8F/News%20Icons...../Latest%20News3.png"/> 
+       
+  
+  </span>
+  
+     </div>
+
+<!---Take care of iframe....and make the youtube vedio play---->
+
+
+<!---VEDIO------->
+  <video width="360" height="240" controls>
+  <source src="https://profileicon.000webhostapp.com/Tie%20Me%20Down%20Lyrics%20by%20Gryffin%20ft%20Elley%20Duhé.mp4", type="video/mp4">
+  <source src="https://profileicon.000webhostapp.com/Tie%20Me%20Down%20Lyrics%20by%20Gryffin%20ft%20Elley%20Duhé.mp4" type="video/ogg">
+Your browser does not support the video tag.
+</video>
+
+</section>
+  
+  
+  
+  <!-----VEDIO2---->
+<section class="vedios" style="background:white;height:auto; margin-top:5px;background-clip:border-box;border-top:5px solid rgba(0,0,0,0.3);">
+
+<!-----Set the paragraph to a form that gets VEDIOS DESCRIPTION AND NAMES--
+   
+   IT SHOULD ALSO GET THE USER ICON AND display It ...if NO ICON IS PRESENT...IN THE USER ACCOUNT.....THEN DEFAULT ICON SHOULD BE USED....
+--->
+<div style="background-clip:padding-box;margin-bottom:3px;border-bottom:rgba(0,0,0,0.4);
+  box-shadow:0 3px 0 0 rgba(0,0,0,0.4);
+  
+ ">
+     <div style="display: flex;
+justify-content:space-between;">
+<p style="margin-left:0
+ 1px;border-radius:0px 0px 20px 0px; margin-top:5px;background-color: black;">
+  <span style="color:white;padding:5px;">
+  When Everyone looks up to you and you are broke..</span>
+  
+  
+</p>
+
+
+<!---The span below forms a user icon on the right side.....---> 
+
+
+<span style="margin-right:5px;margin-top:10px;">
+<i style="margin-left:5px;">RESPONSIBILITY</i>
+  <img width="30px" height="30px" class="icons"src="https://profileicon.000webhostapp.com/Body%20Icons🏋%EF%B8%8F🏋%EF%B8%8F%E2%80%8D♀%EF%B8%8F🏋%EF%B8%8F%E2%80%8D♂%EF%B8%8F🏋%EF%B8%8F/News%20Icons...../Latest%20News2.png"/> 
+       
+  
+  </span>
+  
+     </div>
+
+<!---Take care of iframe....and make the youtube vedio play---->
+
+
+<!---VEDIO------->
+  <video width="360" height="240" controls>
+  <source src="https://profileicon.000webhostapp.com/Vedios/WHEN%20EVERYONE%20LOOKS%20UP%20TO%20YOU%20🥺🥺😭😭😭ANF%20YOU%20ARE%20BROKE.mp4" type="video/mp4">
+  <source src="https://profileicon.000webhostapp.com/Tie%20Me%20Down%20Lyrics%20by%20Gryffin%20ft%20Elley%20Duhé.mp4" type="video/ogg">
+Your browser does not support the video tag.
+</video>
+
+</section>
+  
+  
+  
+
+</body>
+</html>
+
+ <!-------
+  
+ ----YOUTUBE IFRAME--
+  
+  <iframe class="iframe" width="320"height="240" src="https://youtu.be/K_-dUWs8I0A"></iframe>
+        
+  <div id="container"
+  style="padding-bottom:56.25%; position:relative; display:block; width: 100%">
+  <iframe id="ViostreamIframe" width="100%" height="100%"
+    src="https://youtu.be/8R75hC1Kzl0"
+    frameborder="0" allowfullscreen="" style="position:absolute; top:0; left: 0">
+  </iframe>
+</div>
+  
+</div>
+
+/><br/>
+<center><iframe src="https://youtu.be/cqyziA30whE" id="youtubeid" class="vidiframe" allowfullscreen="allowfullscreen" mozallowfullscreen="mozallowfullscreen" msallowfullscreen="msallowfullscreen" oallowfullscreen="oallowfullscreen" webkitallowfullscreen="webkitallowfullscreen"></iframe></center>
+---------->
+
+
